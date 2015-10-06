@@ -1,10 +1,5 @@
 class Author < ActiveRecord::Base
-  has_many :articles do
-    def cache_key
-      [count(:updated_at),maximum(:updated_at)].map(&:to_i).join('-')
-    end
-  end
-  # after_save :update_author_cache
+  has_many :articles 
 
   def self.generate_authors(count=1000)
     count.times do
