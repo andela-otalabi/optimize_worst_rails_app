@@ -6,6 +6,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'fabrication'
+gem 'faker'
 gem 'rails-observers', git: 'https://github.com/rails/rails-observers.git'
 gem 'actionpack-page_caching'
 gem 'jbuilder', '~> 2.0'
@@ -17,8 +19,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'fabrication'
-  gem 'faker'
+  
   gem 'rspec-rails', '~> 3.3.3'
   gem 'bullet'
 end
