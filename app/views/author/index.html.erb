@@ -5,7 +5,6 @@
 </nav>
 
 <%= will_paginate @authors %>
-<% cache("#{cache_key_for_authors}-#{@authors.current_page}") do %>
 <div class="author">
   <% @authors.each do |author| %>
     <h2>My name is <%= author.name %></h2>
@@ -14,4 +13,3 @@
     <% end %>
   <% end %>
 </div>
-<% end %>
