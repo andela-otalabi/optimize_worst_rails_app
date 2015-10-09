@@ -1,7 +1,13 @@
 class AuthorSweeper < ActionController::Caching::Sweeper
-  observe Author, Article
+  observe Author
 
-   def after_save(record)
-    expire_page(authors_path)
+  def after_save(author)
+    expire_cache_for(author)
+  end
+
+  private
+  def expire_cache_for(author)
+    expire_fragment(:controller => '#{record}', 
+      :action => 'index', :action_suffix => 'author')
   end
 end

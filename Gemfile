@@ -9,7 +9,6 @@ gem 'turbolinks'
 gem 'fabrication'
 gem 'faker'
 gem 'rails-observers', git: 'https://github.com/rails/rails-observers.git'
-gem 'actionpack-page_caching'
 gem 'jbuilder', '~> 2.0'
 gem 'will_paginate'
 gem 'sdoc', '~> 0.4.0', group: :doc
