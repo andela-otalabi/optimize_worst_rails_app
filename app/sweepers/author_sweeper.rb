@@ -3,6 +3,5 @@ class AuthorSweeper < ActionController::Caching::Sweeper
 
    def after_save(record)
     expire_page(authors_path)
-    expire_page("/#{record.url}")
   end
 end
