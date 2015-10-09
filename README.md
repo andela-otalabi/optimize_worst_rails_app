@@ -23,6 +23,7 @@ Completed 200 OK in 16197ms (Views: 38.0ms | ActiveRecord: 4389.4ms)
 It took 16 seconds to load and a lot of the time taken isn't even in the ActiveRecord querying or the view. It's the creation of ruby objects that is taking a lot of time. This will be explained in further detail below.
 
 *To Optimize This Rails App*
+
 The following were carried out:
 
 * add an index to the correct columns
